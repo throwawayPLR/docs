@@ -1,0 +1,670 @@
+@prefix : <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> .
+
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> rdf:type owl:Ontology ;
+                                                                <http://purl.org/dc/elements/1.1/creator> "Pol Labrador Reyno" ;
+                                                                <http://purl.org/dc/elements/1.1/title> "The Inteligent Tourist Ontology" ;
+                                                                owl:versionInfo "0.0.1" ;
+                                                                <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://schema.org/aggregateRating
+<https://schema.org/aggregateRating> rdf:type owl:ObjectProperty ;
+                                     rdfs:range <https://schema.org/AggregateRating> ;
+                                     rdfs:comment "The overall rating, based on a collection of reviews or ratings, of the item." ;
+                                     rdfs:label "aggregateRating" .
+
+
+###  https://schema.org/geo
+<https://schema.org/geo> rdf:type owl:ObjectProperty ;
+                         rdfs:domain <https://schema.org/City> ;
+                         rdfs:range <https://schema.org/GeoCoordinates> ;
+                         rdfs:comment "Specifies the coordinates of a place" ;
+                         rdfs:label "geo" .
+
+
+###  https://schema.org/location
+<https://schema.org/location> rdf:type owl:ObjectProperty ;
+                              rdfs:range <https://schema.org/City> ;
+                              rdfs:comment "The location of, for example, where an event is happening, where an organization is located, or where an action takes place." ;
+                              rdfs:label "location" .
+
+
+###  https://schema.org/priceSpecification
+<https://schema.org/priceSpecification> rdf:type owl:ObjectProperty ;
+                                        rdfs:range <https://schema.org/PriceSpecification> ;
+                                        rdfs:comment "One or more detailed price specifications, indicating the unit price and delivery or payment charges." ;
+                                        rdfs:label "priceSpecification" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended
+:isRecommended rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "Boolean to specify if AggregateRating > 4, defaults at false." ;
+               rdfs:label "isRecommended" .
+
+
+###  https://schema.org/identifier
+<https://schema.org/identifier> rdf:type owl:DatatypeProperty ;
+                                rdfs:domain owl:Thing ;
+                                rdfs:range xsd:integer ;
+                                rdfs:comment "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc." ;
+                                rdfs:label "identifier" .
+
+
+###  https://schema.org/latitude
+<https://schema.org/latitude> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <https://schema.org/GeoCoordinates> ;
+                              rdfs:range xsd:decimal ;
+                              rdfs:comment "The latitude of a location. For example 37.42242" ;
+                              rdfs:label "latitude" .
+
+
+###  https://schema.org/longitude
+<https://schema.org/longitude> rdf:type owl:DatatypeProperty ;
+                               rdfs:domain <https://schema.org/GeoCoordinates> ;
+                               rdfs:range xsd:decimal ;
+                               rdfs:comment "The longitude of a location. For example -122.08585" ;
+                               rdfs:label "longitude" .
+
+
+###  https://schema.org/name
+<https://schema.org/name> rdf:type owl:DatatypeProperty ;
+                          rdfs:domain owl:Thing ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "The name of the item." ;
+                          rdfs:label "name" .
+
+
+###  https://schema.org/price
+<https://schema.org/price> rdf:type owl:DatatypeProperty ;
+                           rdfs:domain <https://schema.org/PriceSpecification> ;
+                           rdfs:range xsd:decimal ;
+                           rdfs:comment "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes." ;
+                           rdfs:label "price" .
+
+
+###  https://schema.org/priceCurrency
+<https://schema.org/priceCurrency> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain <https://schema.org/PriceSpecification> ;
+                                   rdfs:range xsd:string ;
+                                   rdfs:comment "The currency of the price, or a price component when attached to PriceSpecification and its subtypes." ;
+                                   rdfs:label "priceCurrency" .
+
+
+###  https://schema.org/ratingValue
+<https://schema.org/ratingValue> rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain <https://schema.org/AggregateRating> ;
+                                 rdfs:range xsd:decimal ;
+                                 rdfs:comment "The rating for the content." ;
+                                 rdfs:label "ratingValue" .
+
+
+###  https://schema.org/starRating
+<https://schema.org/starRating> rdf:type owl:DatatypeProperty ;
+                                rdfs:domain <https://schema.org/Hotel> ;
+                                rdfs:range xsd:integer ;
+                                rdfs:comment "An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies." ;
+                                rdfs:label "starRating" .
+
+
+###  https://schema.org/startDate
+<https://schema.org/startDate> rdf:type owl:DatatypeProperty ,
+                                        owl:FunctionalProperty ;
+                               rdfs:domain <https://schema.org/Event> ;
+                               rdfs:range xsd:dateTime ;
+                               rdfs:comment "The start date and time of the item." ;
+                               rdfs:label "startDate" .
+
+
+###  https://schema.org/unitText
+<https://schema.org/unitText> rdf:type owl:DatatypeProperty ;
+                              rdfs:domain <https://schema.org/PriceSpecification> ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "A string or text indicating the unit of measurement." ;
+                              rdfs:label "unitText" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/AndalusianRestaurant
+:AndalusianRestaurant rdf:type owl:Class ;
+                      rdfs:subClassOf <https://schema.org/Restaurant> ;
+                      rdfs:label "Andalusian Restaurant" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachAttraction
+:BeachAttraction rdf:type owl:Class ;
+                 rdfs:subClassOf <https://schema.org/TouristAttraction> .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachHotel
+:BeachHotel rdf:type owl:Class ;
+            rdfs:subClassOf <https://schema.org/Hotel> ;
+            rdfs:label "Beach Hotel" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusTransport
+:BusTransport rdf:type owl:Class ;
+              rdfs:subClassOf :Transport .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusinessHotel
+:BusinessHotel rdf:type owl:Class ;
+               rdfs:subClassOf <https://schema.org/Hotel> ;
+               rdfs:label "Business Hotel" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/CulturalEvent
+:CulturalEvent rdf:type owl:Class ;
+               rdfs:subClassOf <https://schema.org/Event> ;
+               rdfs:label "Cultural Event" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/GastronomicEvent
+:GastronomicEvent rdf:type owl:Class ;
+                  rdfs:subClassOf <https://schema.org/Event> ;
+                  rdfs:label "Gastronomic Event" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ItalianRestaurant
+:ItalianRestaurant rdf:type owl:Class ;
+                   rdfs:subClassOf <https://schema.org/Restaurant> ;
+                   rdfs:label "Italian Restaurant" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/JapaneseRestaurant
+:JapaneseRestaurant rdf:type owl:Class ;
+                    rdfs:subClassOf <https://schema.org/Restaurant> ;
+                    rdfs:label "Japanese Restaurant" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/LuxuriousHotel
+:LuxuriousHotel rdf:type owl:Class ;
+                rdfs:subClassOf <https://schema.org/Hotel> ;
+                rdfs:label "Luxurious Hotel" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MediterranianRestaurant
+:MediterranianRestaurant rdf:type owl:Class ;
+                         rdfs:subClassOf <https://schema.org/Restaurant> ;
+                         rdfs:label "Mediterranian Restaurant" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MetroTransport
+:MetroTransport rdf:type owl:Class ;
+                rdfs:subClassOf :Transport .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MexicanRestaurant
+:MexicanRestaurant rdf:type owl:Class ;
+                   rdfs:subClassOf <https://schema.org/Restaurant> ;
+                   rdfs:label "Mexican Restaurant" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MonumentAttraction
+:MonumentAttraction rdf:type owl:Class ;
+                    rdfs:subClassOf <https://schema.org/TouristAttraction> .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseumAttraction
+:MuseumAttraction rdf:type owl:Class ;
+                  rdfs:subClassOf <https://schema.org/TouristAttraction> .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MusicEvent
+:MusicEvent rdf:type owl:Class ;
+            rdfs:subClassOf <https://schema.org/Event> ;
+            rdfs:label "Music Event" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ParkAttraction
+:ParkAttraction rdf:type owl:Class ;
+                rdfs:subClassOf <https://schema.org/TouristAttraction> .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/PublicBicycleTransport
+:PublicBicycleTransport rdf:type owl:Class ;
+                        rdfs:subClassOf :Transport .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RuralHotel
+:RuralHotel rdf:type owl:Class ;
+            rdfs:subClassOf <https://schema.org/Hotel> ;
+            rdfs:label "Rural Hotel" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/SportingEvent
+:SportingEvent rdf:type owl:Class ;
+               rdfs:subClassOf <https://schema.org/Event> ;
+               rdfs:label "Sporting Event" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TaxiTransport
+:TaxiTransport rdf:type owl:Class ;
+               rdfs:subClassOf :Transport .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TechnologicEvent
+:TechnologicEvent rdf:type owl:Class ;
+                  rdfs:subClassOf <https://schema.org/Hotel> ;
+                  rdfs:label "Technologic Event" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TramTransport
+:TramTransport rdf:type owl:Class ;
+               rdfs:subClassOf :Transport .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport
+:Transport rdf:type owl:Class ;
+           rdfs:comment "A transport service." ;
+           rdfs:label "Transport" .
+
+
+###  https://schema.org/AggregateRating
+<https://schema.org/AggregateRating> rdf:type owl:Class ;
+                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://schema.org/ratingValue> ;
+                                                       owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                       owl:onDataRange xsd:decimal
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://schema.org/ratingValue> ;
+                                                       owl:maxQualifiedCardinality "5"^^xsd:nonNegativeInteger ;
+                                                       owl:onDataRange xsd:decimal
+                                                     ] ;
+                                     rdfs:comment "The average rating based on multiple ratings or reviews." ;
+                                     rdfs:label "Aggregate Rating" .
+
+
+###  https://schema.org/City
+<https://schema.org/City> rdf:type owl:Class ;
+                          rdfs:comment "A city or town." ;
+                          rdfs:label "City" .
+
+
+###  https://schema.org/Event
+<https://schema.org/Event> rdf:type owl:Class ;
+                           rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival." ;
+                           rdfs:label "Event" .
+
+
+###  https://schema.org/GeoCoordinates
+<https://schema.org/GeoCoordinates> rdf:type owl:Class ;
+                                    rdfs:comment "The geographic coordinates of a place or event." ;
+                                    rdfs:label "Geographic Coordinates" .
+
+
+###  https://schema.org/Hotel
+<https://schema.org/Hotel> rdf:type owl:Class ;
+                           rdfs:comment "A hotel is an establishment that provides lodging paid on a short-term basis" ;
+                           rdfs:label "Hotel" .
+
+
+###  https://schema.org/PriceSpecification
+<https://schema.org/PriceSpecification> rdf:type owl:Class ;
+                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <https://schema.org/price> ;
+                                                          owl:minQualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+                                                          owl:onDataRange xsd:decimal
+                                                        ] ;
+                                        rdfs:comment "A structured value representing a price or price range." ;
+                                        rdfs:label "Price Specification" .
+
+
+###  https://schema.org/Restaurant
+<https://schema.org/Restaurant> rdf:type owl:Class ;
+                                rdfs:comment "A restaurant." ;
+                                rdfs:label "Restaurant" .
+
+
+###  https://schema.org/TouristAttraction
+<https://schema.org/TouristAttraction> rdf:type owl:Class ;
+                                       rdfs:comment "A tourist attraction." ;
+                                       rdfs:label "Tourist Attraction" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid
+:FestivalMadrid rdf:type owl:NamedIndividual ,
+                         :SportingEvent ;
+                <https://schema.org/location> :Madrid ;
+                <https://schema.org/identifier> 7 ;
+                <https://schema.org/name> "Festival Madrid" ;
+                <https://schema.org/startDate> "2024-07-21T00:00:00"^^xsd:dateTime ;
+                rdfs:comment "Instance for event Festival Madrid" ;
+                rdfs:label "Festival Madrid" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid
+:HotelRoyalMadrid rdf:type owl:NamedIndividual ,
+                           :BusinessHotel ;
+                  <https://schema.org/aggregateRating> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> ;
+                  <https://schema.org/location> :Madrid ;
+                  <https://schema.org/priceSpecification> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> ;
+                  :isRecommended "false"^^xsd:boolean ;
+                  <https://schema.org/identifier> 11 ;
+                  <https://schema.org/name> "Hotel Royal Madrid" ;
+                  <https://schema.org/starRating> 3 ;
+                  rdfs:comment "Instance for Hotel Royal Madrid (Business)" ;
+                  rdfs:label "Hotel Royal Madrid (Business)" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid
+:Madrid rdf:type owl:NamedIndividual ,
+                 <https://schema.org/City> ;
+        <https://schema.org/geo> :MadridCoordinates ;
+        <https://schema.org/identifier> 3 ;
+        <https://schema.org/name> "Madrid" ;
+        rdfs:comment "An instance representing the Madrid city" ;
+        rdfs:label "Madrid" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates
+:MadridCoordinates rdf:type owl:NamedIndividual ,
+                            <https://schema.org/GeoCoordinates> ;
+                   <https://schema.org/latitude> 40.4168 ;
+                   <https://schema.org/longitude> -3.7038 ;
+                   rdfs:comment "Madrid geographic coordinates." ;
+                   rdfs:label "Madrid Coordinates" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid
+:MuseoMadrid rdf:type owl:NamedIndividual ,
+                      :MuseumAttraction ;
+             <https://schema.org/aggregateRating> :MuseoMadridRating ;
+             <https://schema.org/location> :Madrid ;
+             :isRecommended "false"^^xsd:boolean ;
+             <https://schema.org/identifier> 4 ;
+             <https://schema.org/name> "Museo Madrid" ;
+             rdfs:comment "Instance for tourist attraction Museo Madrid." ;
+             rdfs:label "Museo Madrid" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating
+:MuseoMadridRating rdf:type owl:NamedIndividual ,
+                            <https://schema.org/AggregateRating> ;
+                   <https://schema.org/ratingValue> 3.7 ;
+                   rdfs:comment "Average rating of Museo Madrid" ;
+                   rdfs:label "Museo Madrid Rating" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid
+:RestauranteGourmetMadrid rdf:type owl:NamedIndividual ,
+                                   :JapaneseRestaurant ;
+                          <https://schema.org/aggregateRating> :RestauranteGourmetMadridRating ;
+                          <https://schema.org/location> :Madrid ;
+                          <https://schema.org/priceSpecification> :RestauranteGourmetMadridPrice ;
+                          :isRecommended "false"^^xsd:boolean ;
+                          <https://schema.org/identifier> 2 ;
+                          <https://schema.org/name> "Restaurante Gourmet Madrid" ;
+                          rdfs:comment "Instance for Restaurante Gourmet Madrid" ;
+                          rdfs:label "Restaurante Gourmet Madrid" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice
+:RestauranteGourmetMadridPrice rdf:type owl:NamedIndividual ,
+                                        <https://schema.org/PriceSpecification> ;
+                               <https://schema.org/price> 30 ;
+                               <https://schema.org/priceCurrency> "EUR" ;
+                               <https://schema.org/unitText> "Per Meal" ;
+                               rdfs:comment "Price per meal for Restaurante Gourmet Madrid" ;
+                               rdfs:label "Restaurante Gourmet Madrid Price" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating
+:RestauranteGourmetMadridRating rdf:type owl:NamedIndividual ,
+                                         <https://schema.org/AggregateRating> ;
+                                <https://schema.org/ratingValue> 4.8 ;
+                                rdfs:comment "Average rating of Restaurante Gourmet Madrid" ;
+                                rdfs:label "Restaurante Gourmet Madrid Rating" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid
+:UrbanMadrid rdf:type owl:NamedIndividual ,
+                      :MetroTransport ;
+             <https://schema.org/location> :Madrid ;
+             <https://schema.org/priceSpecification> :UrbanMadridPrice ;
+             <https://schema.org/identifier> 1 ;
+             <https://schema.org/name> "Urban Madrid" ;
+             rdfs:comment "Instance for transport Urban Madrid" ;
+             rdfs:label "Urban Madrid" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice
+:UrbanMadridPrice rdf:type owl:NamedIndividual ,
+                           <https://schema.org/PriceSpecification> ;
+                  <https://schema.org/price> 8.85 ;
+                  <https://schema.org/priceCurrency> "EUR" ;
+                  <https://schema.org/unitText> "Per Ride" ;
+                  rdfs:comment "Price per ride for Urban Madrid" ;
+                  rdfs:label "Urban Madrid Price" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> rdf:type owl:NamedIndividual ,
+                                                                                                       <https://schema.org/PriceSpecification> ;
+                                                                                              <https://schema.org/price> 146 ;
+                                                                                              <https://schema.org/priceCurrency> "EUR" ;
+                                                                                              <https://schema.org/unitText> "Per Night" ;
+                                                                                              rdfs:comment "Price per night for Hotel Royal Madrid (Business)" ;
+                                                                                              rdfs:label "Hotel Royal Madrid Price (Business)" .
+
+
+###  http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> rdf:type owl:NamedIndividual ,
+                                                                                                        <https://schema.org/AggregateRating> ;
+                                                                                               <https://schema.org/ratingValue> 4.4 ;
+                                                                                               rdfs:comment "Average rating of Hotel Royal Madrid" ;
+                                                                                               rdfs:label "Hotel Royal Madrid Rating (Business)" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:FestivalMadridRating rdfs:label "Festival Madrid Rating" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#h> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#v> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#re> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "HotelRecommendation" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://schema.org/Hotel> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/aggregateRating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/ratingValue> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#v> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 4 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRecommended ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "RestaurantRecommendation" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://schema.org/Restaurant> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#re>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/aggregateRating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/ratingValue> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#v> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 4 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRecommended ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#re> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "TouristAttractionRecommendation" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://schema.org/TouristAttraction> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/aggregateRating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/ratingValue> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first <urn:swrl:var#v> ;
+                                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first 4 ;
+                                                                                                                                                rdf:rest rdf:nil
+                                                                                                                                              ]
+                                                                                                                                   ]
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isRecommended ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

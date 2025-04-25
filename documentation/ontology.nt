@@ -1,0 +1,619 @@
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> <http://purl.org/dc/elements/1.1/creator> "Pol Labrador Reyno" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> <http://purl.org/dc/elements/1.1/title> "The Inteligent Tourist Ontology" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://schema.org/aggregateRating
+<https://schema.org/aggregateRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/aggregateRating> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/AggregateRating> .
+<https://schema.org/aggregateRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The overall rating, based on a collection of reviews or ratings, of the item." .
+<https://schema.org/aggregateRating> <http://www.w3.org/2000/01/rdf-schema#label> "aggregateRating" .
+# 
+# https://schema.org/geo
+<https://schema.org/geo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/City> .
+<https://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/GeoCoordinates> .
+<https://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies the coordinates of a place" .
+<https://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#label> "geo" .
+# 
+# https://schema.org/location
+<https://schema.org/location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/City> .
+<https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of, for example, where an event is happening, where an organization is located, or where an action takes place." .
+<https://schema.org/location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# https://schema.org/priceSpecification
+<https://schema.org/priceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/PriceSpecification> .
+<https://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "One or more detailed price specifications, indicating the unit price and delivery or payment charges." .
+<https://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "priceSpecification" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Boolean to specify if AggregateRating > 4, defaults at false." .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> <http://www.w3.org/2000/01/rdf-schema#label> "isRecommended" .
+# 
+# https://schema.org/identifier
+<https://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc." .
+<https://schema.org/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# 
+# https://schema.org/latitude
+<https://schema.org/latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/GeoCoordinates> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The latitude of a location. For example 37.42242" .
+<https://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#label> "latitude" .
+# 
+# https://schema.org/longitude
+<https://schema.org/longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/GeoCoordinates> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#comment> "The longitude of a location. For example -122.08585" .
+<https://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#label> "longitude" .
+# 
+# https://schema.org/name
+<https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2002/07/owl#Thing> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of the item." .
+<https://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# https://schema.org/price
+<https://schema.org/price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/PriceSpecification> .
+<https://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#comment> "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes." .
+<https://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#label> "price" .
+# 
+# https://schema.org/priceCurrency
+<https://schema.org/priceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/PriceSpecification> .
+<https://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "The currency of the price, or a price component when attached to PriceSpecification and its subtypes." .
+<https://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "priceCurrency" .
+# 
+# https://schema.org/ratingValue
+<https://schema.org/ratingValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/ratingValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/AggregateRating> .
+<https://schema.org/ratingValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://schema.org/ratingValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The rating for the content." .
+<https://schema.org/ratingValue> <http://www.w3.org/2000/01/rdf-schema#label> "ratingValue" .
+# 
+# https://schema.org/starRating
+<https://schema.org/starRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/starRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Hotel> .
+<https://schema.org/starRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://schema.org/starRating> <http://www.w3.org/2000/01/rdf-schema#comment> "An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies." .
+<https://schema.org/starRating> <http://www.w3.org/2000/01/rdf-schema#label> "starRating" .
+# 
+# https://schema.org/startDate
+<https://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Event> .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The start date and time of the item." .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "startDate" .
+# 
+# https://schema.org/unitText
+<https://schema.org/unitText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/unitText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/PriceSpecification> .
+<https://schema.org/unitText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/unitText> <http://www.w3.org/2000/01/rdf-schema#comment> "A string or text indicating the unit of measurement." .
+<https://schema.org/unitText> <http://www.w3.org/2000/01/rdf-schema#label> "unitText" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/AndalusianRestaurant
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/AndalusianRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/AndalusianRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Restaurant> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/AndalusianRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Andalusian Restaurant" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachAttraction
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/TouristAttraction> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachHotel
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Hotel> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Beach Hotel" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusTransport
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusinessHotel
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusinessHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Hotel> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusinessHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Business Hotel" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/CulturalEvent
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/CulturalEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Event> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/CulturalEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Cultural Event" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/GastronomicEvent
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/GastronomicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/GastronomicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Event> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/GastronomicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Gastronomic Event" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ItalianRestaurant
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ItalianRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ItalianRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Restaurant> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ItalianRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Italian Restaurant" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/JapaneseRestaurant
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/JapaneseRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/JapaneseRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Restaurant> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/JapaneseRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Japanese Restaurant" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/LuxuriousHotel
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/LuxuriousHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/LuxuriousHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Hotel> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/LuxuriousHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Luxurious Hotel" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MediterranianRestaurant
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MediterranianRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MediterranianRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Restaurant> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MediterranianRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Mediterranian Restaurant" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MetroTransport
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MetroTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MetroTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MexicanRestaurant
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MexicanRestaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MexicanRestaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Restaurant> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MexicanRestaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Mexican Restaurant" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MonumentAttraction
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MonumentAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MonumentAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/TouristAttraction> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseumAttraction
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseumAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseumAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/TouristAttraction> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MusicEvent
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MusicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MusicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Event> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MusicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Music Event" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ParkAttraction
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ParkAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ParkAttraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/TouristAttraction> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/PublicBicycleTransport
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/PublicBicycleTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/PublicBicycleTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RuralHotel
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RuralHotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RuralHotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Hotel> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RuralHotel> <http://www.w3.org/2000/01/rdf-schema#label> "Rural Hotel" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/SportingEvent
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/SportingEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/SportingEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Event> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/SportingEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Sporting Event" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TaxiTransport
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TaxiTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TaxiTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TechnologicEvent
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TechnologicEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TechnologicEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Hotel> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TechnologicEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Technologic Event" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TramTransport
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TramTransport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TramTransport> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> <http://www.w3.org/2000/01/rdf-schema#comment> "A transport service." .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport> <http://www.w3.org/2000/01/rdf-schema#label> "Transport" .
+# 
+# https://schema.org/AggregateRating
+<https://schema.org/AggregateRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/AggregateRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/ratingValue> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/AggregateRating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid2 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "5"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/ratingValue> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/AggregateRating> <http://www.w3.org/2000/01/rdf-schema#comment> "The average rating based on multiple ratings or reviews." .
+<https://schema.org/AggregateRating> <http://www.w3.org/2000/01/rdf-schema#label> "Aggregate Rating" .
+# 
+# https://schema.org/City
+<https://schema.org/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/City> <http://www.w3.org/2000/01/rdf-schema#comment> "A city or town." .
+<https://schema.org/City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# https://schema.org/Event
+<https://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An event happening at a certain time and location, such as a concert, lecture, or festival." .
+<https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# https://schema.org/GeoCoordinates
+<https://schema.org/GeoCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/GeoCoordinates> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographic coordinates of a place or event." .
+<https://schema.org/GeoCoordinates> <http://www.w3.org/2000/01/rdf-schema#label> "Geographic Coordinates" .
+# 
+# https://schema.org/Hotel
+<https://schema.org/Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "A hotel is an establishment that provides lodging paid on a short-term basis" .
+<https://schema.org/Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel" .
+# 
+# https://schema.org/PriceSpecification
+<https://schema.org/PriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#decimal> .
+_:genid3 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/price> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured value representing a price or price range." .
+<https://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Price Specification" .
+# 
+# https://schema.org/Restaurant
+<https://schema.org/Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "A restaurant." .
+<https://schema.org/Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant" .
+# 
+# https://schema.org/TouristAttraction
+<https://schema.org/TouristAttraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/TouristAttraction> <http://www.w3.org/2000/01/rdf-schema#comment> "A tourist attraction." .
+<https://schema.org/TouristAttraction> <http://www.w3.org/2000/01/rdf-schema#label> "Tourist Attraction" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/SportingEvent> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <https://schema.org/location> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <https://schema.org/identifier> "7"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <https://schema.org/name> "Festival Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <https://schema.org/startDate> "2024-07-21T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for event Festival Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Madrid" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusinessHotel> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <https://schema.org/aggregateRating> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <https://schema.org/location> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <https://schema.org/priceSpecification> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <https://schema.org/identifier> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <https://schema.org/name> "Hotel Royal Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <https://schema.org/starRating> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for Hotel Royal Madrid (Business)" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Madrid (Business)" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/City> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> <https://schema.org/geo> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> <https://schema.org/identifier> "3"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> <https://schema.org/name> "Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance representing the Madrid city" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/GeoCoordinates> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates> <https://schema.org/latitude> "40.4168"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates> <https://schema.org/longitude> "-3.7038"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates> <http://www.w3.org/2000/01/rdf-schema#comment> "Madrid geographic coordinates." .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates> <http://www.w3.org/2000/01/rdf-schema#label> "Madrid Coordinates" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseumAttraction> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <https://schema.org/aggregateRating> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <https://schema.org/location> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <https://schema.org/identifier> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <https://schema.org/name> "Museo Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for tourist attraction Museo Madrid." .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Madrid" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/AggregateRating> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating> <https://schema.org/ratingValue> "3.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating of Museo Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating> <http://www.w3.org/2000/01/rdf-schema#label> "Museo Madrid Rating" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/JapaneseRestaurant> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <https://schema.org/aggregateRating> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <https://schema.org/location> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <https://schema.org/priceSpecification> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <https://schema.org/identifier> "2"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <https://schema.org/name> "Restaurante Gourmet Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for Restaurante Gourmet Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Madrid" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PriceSpecification> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> <https://schema.org/price> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> <https://schema.org/priceCurrency> "EUR" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> <https://schema.org/unitText> "Per Meal" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Price per meal for Restaurante Gourmet Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Madrid Price" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/AggregateRating> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating> <https://schema.org/ratingValue> "4.8"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating of Restaurante Gourmet Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurante Gourmet Madrid Rating" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MetroTransport> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <https://schema.org/location> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <https://schema.org/priceSpecification> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <https://schema.org/identifier> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <https://schema.org/name> "Urban Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <http://www.w3.org/2000/01/rdf-schema#comment> "Instance for transport Urban Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Madrid" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PriceSpecification> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> <https://schema.org/price> "8.85"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> <https://schema.org/priceCurrency> "EUR" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> <https://schema.org/unitText> "Per Ride" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Price per ride for Urban Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice> <http://www.w3.org/2000/01/rdf-schema#label> "Urban Madrid Price" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/PriceSpecification> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> <https://schema.org/price> "146"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> <https://schema.org/priceCurrency> "EUR" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> <https://schema.org/unitText> "Per Night" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> <http://www.w3.org/2000/01/rdf-schema#comment> "Price per night for Hotel Royal Madrid (Business)" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Madrid Price (Business)" .
+# 
+# http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/AggregateRating> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> <https://schema.org/ratingValue> "4.4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> <http://www.w3.org/2000/01/rdf-schema#comment> "Average rating of Hotel Royal Madrid" .
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel Royal Madrid Rating (Business)" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadridRating> <http://www.w3.org/2000/01/rdf-schema#label> "Festival Madrid Rating" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#h> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#re> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid17 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#label> "HotelRecommendation" .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#arguments> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#v> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/ratingValue> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid25 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/aggregateRating> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid27 <http://www.w3.org/2003/11/swrl#classPredicate> <https://schema.org/Hotel> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid30 <http://www.w3.org/2000/01/rdf-schema#label> "RestaurantRecommendation" .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid30 <http://www.w3.org/2003/11/swrl#body> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#arguments> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#v> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/ratingValue> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/aggregateRating> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#re> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <https://schema.org/Restaurant> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/2003/11/swrl#head> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid42 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#re> .
+_:genid42 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid4 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid4 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid4 <http://www.w3.org/2000/01/rdf-schema#label> "TouristAttractionRecommendation" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid4 <http://www.w3.org/2003/11/swrl#body> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid6 <http://www.w3.org/2003/11/swrl#arguments> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#v> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#v> .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#r> .
+_:genid10 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/ratingValue> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#r> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#h> .
+_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://schema.org/aggregateRating> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <https://schema.org/TouristAttraction> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid4 <http://www.w3.org/2003/11/swrl#head> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,1211 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO", "http://www.w3.org/2000/01/rdf-schema", "https://schema.org", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "The Inteligent Tourist Ontology"
+    },
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/",
+    "version" : "0.0.1",
+    "author" : [ "Pol Labrador Reyno" ],
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Pol Labrador Reyno",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Inteligent Tourist Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "58",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/SportingEvent",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SportingEvent",
+      "undefined" : "Sporting Event"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/FestivalMadrid",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Instance for event Festival Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "FestivalMadrid",
+        "undefined" : "Festival Madrid"
+      }
+    } ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ParkAttraction",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParkAttraction"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TechnologicEvent",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologicEvent",
+      "undefined" : "Technologic Event"
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/ItalianRestaurant",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ItalianRestaurant",
+      "undefined" : "Italian Restaurant"
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "https://schema.org/Hotel",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "undefined" : "Hotel"
+    },
+    "subClasses" : [ "13", "14", "6", "15", "16" ],
+    "comment" : {
+      "undefined" : "A hotel is an establishment that provides lodging paid on a short-term basis"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://schema.org/City",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Madrid",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "An instance representing the Madrid city"
+      },
+      "labels" : {
+        "IRI-based" : "Madrid",
+        "undefined" : "Madrid"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A city or town."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://schema.org/AggregateRating",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AggregateRating",
+      "undefined" : "Aggregate Rating"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridRating(Business)",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Average rating of Hotel Royal Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalMadridRating(Business)",
+        "undefined" : "Hotel Royal Madrid Rating (Business)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridRating",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Average rating of Restaurante Gourmet Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetMadridRating",
+        "undefined" : "Restaurante Gourmet Madrid Rating"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadridRating",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Average rating of Museo Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "MuseoMadridRating",
+        "undefined" : "Museo Madrid Rating"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The average rating based on multiple ratings or reviews."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://schema.org/TouristAttraction",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristAttraction",
+      "undefined" : "Tourist Attraction"
+    },
+    "subClasses" : [ "37", "4", "42", "40" ],
+    "comment" : {
+      "undefined" : "A tourist attraction."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusTransport",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusTransport"
+    },
+    "id" : "34",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/PublicBicycleTransport",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicBicycleTransport"
+    },
+    "id" : "27",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://schema.org/GeoCoordinates",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeoCoordinates",
+      "undefined" : "Geographic Coordinates"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MadridCoordinates",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Madrid geographic coordinates."
+      },
+      "labels" : {
+        "IRI-based" : "MadridCoordinates",
+        "undefined" : "Madrid Coordinates"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "The geographic coordinates of a place or event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/Transport",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Transport",
+      "undefined" : "Transport"
+    },
+    "subClasses" : [ "27", "25", "34", "32", "22" ],
+    "comment" : {
+      "undefined" : "A transport service."
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MediterranianRestaurant",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MediterranianRestaurant",
+      "undefined" : "Mediterranian Restaurant"
+    },
+    "id" : "55",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RuralHotel",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RuralHotel",
+      "undefined" : "Rural Hotel"
+    },
+    "id" : "15",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://schema.org/PriceSpecification",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PriceSpecification",
+      "undefined" : "Price Specification"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadridPrice",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Price per ride for Urban Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "UrbanMadridPrice",
+        "undefined" : "Urban Madrid Price"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadridPrice(Business)",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Price per night for Hotel Royal Madrid (Business)"
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalMadridPrice(Business)",
+        "undefined" : "Hotel Royal Madrid Price (Business)"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadridPrice",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Price per meal for Restaurante Gourmet Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetMadridPrice",
+        "undefined" : "Restaurante Gourmet Madrid Price"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A structured value representing a price or price range."
+    },
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachAttraction",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BeachAttraction"
+    },
+    "id" : "42",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "57",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "58",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "11",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "18",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseumAttraction",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MuseumAttraction"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MuseoMadrid",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Instance for tourist attraction Museo Madrid."
+      },
+      "labels" : {
+        "IRI-based" : "MuseoMadrid",
+        "undefined" : "Museo Madrid"
+      }
+    } ],
+    "id" : "37",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BeachHotel",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BeachHotel",
+      "undefined" : "Beach Hotel"
+    },
+    "id" : "14",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TramTransport",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TramTransport"
+    },
+    "id" : "32",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/JapaneseRestaurant",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "JapaneseRestaurant",
+      "undefined" : "Japanese Restaurant"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/RestauranteGourmetMadrid",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Instance for Restaurante Gourmet Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "RestauranteGourmetMadrid",
+        "undefined" : "Restaurante Gourmet Madrid"
+      }
+    } ],
+    "id" : "64",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/BusinessHotel",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BusinessHotel",
+      "undefined" : "Business Hotel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/HotelRoyalMadrid",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Instance for Hotel Royal Madrid (Business)"
+      },
+      "labels" : {
+        "IRI-based" : "HotelRoyalMadrid",
+        "undefined" : "Hotel Royal Madrid (Business)"
+      }
+    } ],
+    "id" : "16",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/TaxiTransport",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TaxiTransport"
+    },
+    "id" : "25",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/CulturalEvent",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulturalEvent",
+      "undefined" : "Cultural Event"
+    },
+    "id" : "3",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MonumentAttraction",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MonumentAttraction"
+    },
+    "id" : "40",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://schema.org/Event",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "0", "3", "73", "74" ],
+    "comment" : {
+      "undefined" : "An event happening at a certain time and location, such as a concert, lecture, or festival."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MusicEvent",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MusicEvent",
+      "undefined" : "Music Event"
+    },
+    "id" : "74",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MetroTransport",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MetroTransport"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/UrbanMadrid",
+      "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+      "comment" : {
+        "undefined" : "Instance for transport Urban Madrid"
+      },
+      "labels" : {
+        "IRI-based" : "UrbanMadrid",
+        "undefined" : "Urban Madrid"
+      }
+    } ],
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://schema.org/Restaurant",
+    "baseIri" : "https://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "undefined" : "Restaurant"
+    },
+    "subClasses" : [ "76", "55", "8", "77", "64" ],
+    "comment" : {
+      "undefined" : "A restaurant."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/AndalusianRestaurant",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AndalusianRestaurant",
+      "undefined" : "Andalusian Restaurant"
+    },
+    "id" : "76",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/LuxuriousHotel",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LuxuriousHotel",
+      "undefined" : "Luxurious Hotel"
+    },
+    "id" : "13",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/MexicanRestaurant",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MexicanRestaurant",
+      "undefined" : "Mexican Restaurant"
+    },
+    "id" : "77",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/GastronomicEvent",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GastronomicEvent",
+      "undefined" : "Gastronomic Event"
+    },
+    "id" : "73",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://schema.org/location",
+    "baseIri" : "https://schema.org",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "location"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The location of, for example, where an event is happening, where an organization is located, or where an action takes place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://schema.org/name",
+    "baseIri" : "https://schema.org",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "name",
+      "undefined" : "name"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The name of the item."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "17"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "23",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "23",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://schema.org/price",
+    "baseIri" : "https://schema.org",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "price",
+      "undefined" : "price"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "28"
+  }, {
+    "range" : "23",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "23",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "range" : "5",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "5",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "5",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://schema.org/longitude",
+    "baseIri" : "https://schema.org",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "longitude",
+      "undefined" : "longitude"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The longitude of a location. For example -122.08585"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://schema.org/starRating",
+    "baseIri" : "https://schema.org",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "starRating",
+      "undefined" : "starRating"
+    },
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://schema.org/unitText",
+    "baseIri" : "https://schema.org",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "unitText",
+      "undefined" : "unitText"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "A string or text indicating the unit of measurement."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://schema.org/priceCurrency",
+    "baseIri" : "https://schema.org",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "priceCurrency",
+      "undefined" : "priceCurrency"
+    },
+    "domain" : "29",
+    "comment" : {
+      "undefined" : "The currency of the price, or a price component when attached to PriceSpecification and its subtypes."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://schema.org/geo",
+    "baseIri" : "https://schema.org",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "geo",
+      "undefined" : "geo"
+    },
+    "domain" : "12",
+    "comment" : {
+      "undefined" : "Specifies the coordinates of a place"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "52"
+  }, {
+    "range" : "7",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "7",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "7",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "7",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://schema.org/identifier",
+    "baseIri" : "https://schema.org",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "identifier"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://schema.org/startDate",
+    "baseIri" : "https://schema.org",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "startDate",
+      "undefined" : "startDate"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The start date and time of the item."
+    },
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://schema.org/ratingValue",
+    "baseIri" : "https://schema.org",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "ratingValue",
+      "undefined" : "ratingValue"
+    },
+    "maxCardinality" : "5",
+    "domain" : "38",
+    "comment" : {
+      "undefined" : "The rating for the content."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://schema.org/priceSpecification",
+    "baseIri" : "https://schema.org",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "priceSpecification",
+      "undefined" : "priceSpecification"
+    },
+    "domain" : "57",
+    "comment" : {
+      "undefined" : "One or more detailed price specifications, indicating the unit price and delivery or payment charges."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://schema.org/latitude",
+    "baseIri" : "https://schema.org",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "latitude",
+      "undefined" : "latitude"
+    },
+    "domain" : "44",
+    "comment" : {
+      "undefined" : "The latitude of a location. For example 37.42242"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO/isRecommended",
+    "baseIri" : "http://www.semanticweb.org/plabradorr/ontologies/2025/3/ITO",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "isRecommended",
+      "undefined" : "isRecommended"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Boolean to specify if AggregateRating > 4, defaults at false."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://schema.org/aggregateRating",
+    "baseIri" : "https://schema.org",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "aggregateRating",
+      "undefined" : "aggregateRating"
+    },
+    "domain" : "58",
+    "comment" : {
+      "undefined" : "The overall rating, based on a collection of reviews or ratings, of the item."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "9",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "9",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "1",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "1",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "9",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "9",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  } ]
+}
